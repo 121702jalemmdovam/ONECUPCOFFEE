@@ -1,0 +1,694 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  z-index: 4;
+  position: absolute;
+  background-color: transparent;
+}
+header .logo img {
+  width: 160px;
+  height: 70px;
+}
+header .cardImage {
+  display: none;
+}
+header .cardImage img {
+  width: 160px;
+  height: 70px;
+}
+header nav {
+  width: 90%;
+  margin: auto;
+  background-color: transparent;
+  padding: 10px;
+}
+header nav .collapseDiv {
+  justify-content: flex-end;
+  background-color: transparent;
+}
+header nav .collapseDiv .navbar-nav li a {
+  font-size: 18px;
+  line-height: 1;
+  font-family: Mandella;
+  font: optional;
+  color: #fff !important;
+}
+header nav .collapseDiv .navbar-nav li a:hover {
+  border-bottom: 2px solid #fff !important;
+}
+header nav .collapseDiv .dropdown-menu .dropItem {
+  color: #000 !important;
+}
+header nav .collapseDiv .navIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .collapseDiv .navIcon .icon {
+  color: #fff;
+  margin: 0 8px;
+}
+header nav .collapseDiv .navIcon .icon:hover {
+  color: #656565;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  header {
+    background-color: rgb(157, 132, 101);
+  }
+  header nav {
+    background-color: rgb(157, 132, 101);
+  }
+  header nav .collapseDiv {
+    background-color: rgb(157, 132, 101);
+  }
+  header nav .collapseDiv .navbar-nav li a {
+    font-size: 15px;
+    line-height: 1;
+    color: #fff !important;
+  }
+  header nav .collapseDiv .navbar-nav li a:hover {
+    border-bottom: 2px solid #fff !important;
+  }
+  header nav .collapseDiv .navIcon {
+    display: flex;
+    justify-content: flex-start;
+  }
+  header nav .collapseDiv .navIcon .icon {
+    color: #fff;
+    margin: 0 8px;
+  }
+  header nav .collapseDiv .navIcon .icon:hover {
+    color: #656565;
+    cursor: pointer;
+  }
+}
+#corretto {
+  width: 100%;
+  height: 650px;
+  background-image: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  float: right;
+  position: relative;
+}
+#corretto .text {
+  text-align: center;
+}
+#corretto .text img {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+#corretto .text h1 {
+  font-size: 60px;
+  font-family: Marcellus;
+  color: white;
+  padding-top: 10px;
+}
+#corretto .text p {
+  font-size: 16px;
+  padding-top: 10px;
+  width: 600px;
+  color: white;
+}
+#corretto .text button {
+  margin: 10px;
+  width: 170px;
+  height: 55px;
+  background: none;
+  border: 2px solid white;
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+#corretto .text button:hover {
+  background-color: rgb(157, 132, 101);
+}
+
+#delicous {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+#delicous .text1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+  font-family: Marcellus;
+}
+#delicous .text1 p {
+  width: 60%;
+  height: auto;
+  padding-top: 20px;
+  font-size: 23px;
+  color: gray;
+}
+#delicous .coffee {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#delicous .coffee h3 {
+  padding: 10px;
+  cursor: pointer;
+}
+#delicous .coffee h3:hover {
+  color: rgb(157, 132, 101);
+}
+#delicous .coffee p {
+  color: gray;
+}
+
+#herald {
+  padding: 20px;
+  width: 100%;
+  height: fit-content;
+  margin-right: 0px;
+  margin-left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/new-new-h1-bacground-img-3.jpg");
+}
+#herald .text2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+  font-family: Marcellus;
+}
+#herald .text2 h1 {
+  margin: 10px;
+  padding-top: 10px;
+}
+#herald .text2 p {
+  width: 60%;
+  height: auto;
+  padding-top: 20px;
+  font-size: 23px;
+  color: gray;
+}
+#herald .read {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  text-align: justify;
+}
+#herald .read img {
+  width: 100%;
+  height: auto;
+}
+#herald .read h3 {
+  cursor: pointer;
+  padding-top: 20px;
+}
+#herald .read h3:hover {
+  color: rgb(157, 132, 101);
+}
+#herald .read p {
+  color: rgb(106, 98, 98);
+  padding-top: 20px;
+  color: gray;
+}
+#herald .read button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+#herald .read button:hover {
+  color: rgb(157, 132, 101);
+}
+
+#BestInTown {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-image: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-2.jpg");
+}
+#BestInTown .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#BestInTown .container .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#BestInTown .container .image img {
+  width: 100%;
+  height: auto;
+}
+
+#besttown {
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+#besttown .markets {
+  width: 100%;
+  height: auto;
+}
+#besttown .markets span {
+  font-size: 50px;
+  margin: 20px;
+  font-family: Mandella;
+  color: rgb(211, 169, 114);
+}
+#besttown .markets h3 {
+  padding-top: 20px;
+  font-size: 22px;
+  font-family: Mandella;
+}
+#besttown .markets p {
+  color: gray;
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+#OnlineCoffeeShop {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg");
+}
+#OnlineCoffeeShop .container {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopText h1 {
+  font-size: 40px;
+  font-family: Marcellus;
+  color: #262626;
+  padding-top: 10px;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopText img {
+  padding-top: 20px;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopText p {
+  padding-top: 20px;
+  color: #505250;
+  width: 65%;
+  font-size: 20px;
+  font-family: Mandella;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopImage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 20px;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1.5s;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopImage:hover img {
+  cursor: pointer;
+  transition: 1.5s;
+  opacity: 0.5;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopImage:hover button {
+  display: block;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopImage img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopImage h3 {
+  font-size: 21px;
+  font-family: Marcellus;
+  color: #262626;
+  padding-top: 20px;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopImage h3:hover {
+  color: rgb(157, 132, 101);
+  cursor: pointer;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopImage span {
+  color: #656565;
+  font-size: 20px;
+  font-size: Mandella;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopImage button {
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  background-color: #be9c79;
+  position: absolute;
+  display: none;
+  top: 100px;
+  border: none;
+  font-family: inherit;
+  margin: auto;
+  font-size: 13px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-style: inherit;
+  transition: 1.5s;
+}
+#OnlineCoffeeShop .container .OnlineCoffeeShopImage button:hover {
+  background-color: #2f2e2e;
+  transition: 1.5s;
+}
+
+#OurSweetGallery {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+#OurSweetGallery .OurSweetGalleryText {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#OurSweetGallery .OurSweetGalleryText h1 {
+  font-size: 40px;
+  font-family: Marcellus;
+  color: #262626;
+  padding-top: 10px;
+}
+#OurSweetGallery .OurSweetGalleryText img {
+  padding-top: 20px;
+}
+#OurSweetGallery .OurSweetGalleryText p {
+  padding-top: 20px;
+  color: #505250;
+  width: 65%;
+  font-size: 20px;
+  font-family: Mandella;
+}
+#OurSweetGallery .OurSweetGalleryImage {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  position: relative;
+}
+#OurSweetGallery .OurSweetGalleryImage:hover img {
+  cursor: pointer;
+  transition: 1.5s;
+  opacity: 0.2;
+}
+#OurSweetGallery .OurSweetGalleryImage:hover .hoverText {
+  display: block;
+}
+#OurSweetGallery .OurSweetGalleryImage img {
+  width: 100%;
+  height: auto;
+}
+#OurSweetGallery .OurSweetGalleryImage .hoverText {
+  text-align: center;
+  top: 110px;
+  left: 65px;
+  display: none;
+  position: absolute;
+}
+#OurSweetGallery .OurSweetGalleryImage .hoverText h4 {
+  font-size: 28px;
+  color: #2f2e2e;
+  font-weight: 500;
+}
+#OurSweetGallery .OurSweetGalleryImage .hoverText span {
+  font-size: 14px;
+  color: #2f2e2e;
+  font-weight: 500;
+}
+
+#CoffeeTown {
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#CoffeeTown .CoffeeTownImage {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#CoffeeTown .CoffeeTownImage img {
+  width: 100%;
+  height: auto;
+}
+
+#ContactUs {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/p2-background-img-1.jpg");
+}
+#ContactUs .container {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ContactUs .container .ContactUsItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  margin: 20px;
+}
+#ContactUs .container .ContactUsItem p {
+  width: 100%;
+  font-size: 17px;
+  font-family: Marcellus;
+  font-weight: 500;
+  color: #2f2e2e;
+}
+#ContactUs .container .ContactUsItem button {
+  width: 70%;
+  width: 200px;
+  height: 55px;
+  border: none;
+  background-color: #be9c79;
+  cursor: pointer;
+  transition: 1s;
+  color: #fff;
+  font-weight: bold;
+}
+#ContactUs .container .ContactUsItem button:hover {
+  transition: 1s;
+  background-color: #262626;
+}
+
+#EmailAdress {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/footer-top-img-1.jpg");
+}
+#EmailAdress .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#EmailAdress .container .NewsAsFresh {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#EmailAdress .container .NewsAsFresh .NewsAsFreshCorretto {
+  width: 60%;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#EmailAdress .container .NewsAsFresh .NewsAsFreshCorretto img {
+  margin-top: 20px;
+  width: 160px;
+  height: auto;
+}
+#EmailAdress .container .NewsAsFresh .NewsAsFreshCorretto p {
+  margin-top: 20px;
+  color: #fff;
+  padding: 20px;
+  font-size: medium;
+}
+#EmailAdress .container .NewsAsFresh .NewsAsFreshStores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#EmailAdress .container .NewsAsFresh .NewsAsFreshStores h3 {
+  color: #fff;
+  font-size: 24px;
+  font-family: Marcellus;
+}
+#EmailAdress .container .NewsAsFresh .NewsAsFreshStores span {
+  color: #fff;
+}
+#EmailAdress .container .NewsAsFresh .NewsAsFreshStores span:hover {
+  cursor: pointer;
+  color: #BE9C77;
+}
+#EmailAdress .container .NewsAsFresh #OuRCoffee {
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+}
+#EmailAdress .container .NewsAsFresh #OuRCoffee h3 {
+  color: #fff;
+  font-size: 20px;
+  font-family: Marcellus;
+  position: relative;
+}
+#EmailAdress .container .NewsAsFresh #OuRCoffee input {
+  padding-right: 20px;
+  width: 300px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+#EmailAdress .container .NewsAsFresh #OuRCoffee button {
+  width: 70px;
+  height: 60px;
+  position: absolute;
+  background-color: #fff;
+  border: none;
+  right: 20px;
+  font-size: 25px;
+}
+#EmailAdress .container .NewsAsFresh #OuRCoffee button:hover {
+  cursor: pointer;
+  background-color: #BE9C77;
+}
+
+footer {
+  background-color: #121212;
+  padding: 20px;
+}
+footer .container {
+  margin-top: 20px;
+}
+footer .container .sideItem {
+  color: #fff;
+  cursor: pointer;
+}
+footer .container .sideItem:hover {
+  color: #BE9C77;
+  transition: 0.5s;
+}
+footer .container .sideItemlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container .sideItemlist ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .sideItemlist ul li {
+  color: #fff;
+  cursor: pointer;
+}
+footer .container .sideItemlist ul li:hover {
+  color: #BE9C77;
+  transition: 0.5s;
+}
+footer .container .MediaIcon {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .container .MediaIcon button {
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+footer .container .MediaIcon button:hover {
+  color: #BE9C77;
+  transition: 0.5s;
+}
